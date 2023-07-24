@@ -12,6 +12,17 @@ In the realm of infrastructure as code (IaC), Terraform has emerged as a powerfu
 
 # All About Terraform rc file:
 ## Location:
-On windows, 
+On windows, the file should be placed in the `%APPDATA%` directory in a file named `.terraformrc`
+On all other systems, the file must be named `.terraformrc` and be placed in the home directory of the pertaining user
 
-# Sample 
+# Sample File Content
+```rc
+provider_installation {
+    dev_overrides {
+        "registry.rishabh.com/provider/sample_provider" = "/path/where/provider/binary/is/stored/"
+    }
+}
+```
+Note: The path that you provide must be a directory in which the provider binary is stored. 
+In the sample block, we've redefined provider source of "registry.rishabh.com/provider/sample_provider". 
+Whenever we reference that provider source, terraform will use the compiled binary you have saved in the given directory
