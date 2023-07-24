@@ -1,7 +1,7 @@
 ---
 title: "Customizing Terraform Providers: Harnessing Flexibility with Overrides"
-categories: [terraform, provider]
-tags: [golang, backend, terraform, provider]
+categories: [terraform,provider]
+tags: [golang,backend,terraform,provider]
 ---
 
 # Introduction
