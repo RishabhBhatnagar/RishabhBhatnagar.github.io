@@ -1,5 +1,5 @@
 ---
-title: Golang Middlewares
+title: "Golang Middlewares"
 categories: [golang]
 tags: [golang,backend,middleware,rest,api]
 ---
